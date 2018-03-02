@@ -24,14 +24,6 @@ section {
   padding-top: 8%;
 }
 
-section:nth-of-type(2n+3) {
-  background-color: black;
-}
-
-section:nth-of-type(2n) {
-  background-color: white;
-}
-
 a {
   color: #fff;
   text-decoration: none;
@@ -125,7 +117,7 @@ header nav ul li:hover {
 /************* HOME *************/
 
 #home h1{
-  margin: 240px auto 0 auto;
+  margin: 25vh auto 0 auto;
   font-size: 4em;
 }
 
@@ -136,7 +128,7 @@ header nav ul li:hover {
 
 .fa-chevron-down {
   font-size: 2em;
-  margin-top: 100px;
+  margin-top: 20vh;
   opacity: 0.7;
 }
 
@@ -145,6 +137,9 @@ header nav ul li:hover {
 }
 
 /************* ABOUT *************/
+#about {
+  background-color: #ffffff;
+}
 #about img {
   width: 240px;
 }
@@ -165,4 +160,42 @@ header nav ul li:hover {
   min-width: 300px;
   width: 80%;
   margin: 0 auto;
+}
+
+/************* PROJECTS *************/
+#projects {
+  background-color: #f0f0f0;
+}
+
+#work {
+  width: 900px;
+
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#work ul {
+  padding: 0;
+  text-align: center;
+}
+
+#work ul li {
+  float: left;
+  width: 33%;
+  margin-bottom: 15px;
+}
+
+#work img {
+  width: 280px;
+  height: 170px;
+  border-radius: 5px;
+}
+
+#work img:hover {
+  transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
