@@ -16,7 +16,17 @@
     <header>
       <div id="logo">
         <a href="#">
-          <img src="http://via.placeholder.com/140x65" alt="Logo">
+          <!-- <img src="images/logo.svg" alt="Logo"> -->
+          <svg version="1.1" id="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="140px" height="65px" viewBox="0 0 140 65" enable-background="new 0 0 140 65" xml:space="preserve">
+            <g class="letters" fill="#494949">
+              <polygon points="126.222,20 120.622,44 72.492,44 74.718,35 113.114,35 114.283,30 97.419,30 99.635,20 			"/>
+              <polygon points="129.485,6 127.269,17 88.74,17 85.469,30 75.872,30 81.354,6 			"/>
+              <path d="M16.993,35h48.13l-2.215,9h-48.13L16.993,35z M23.64,6h48.13l-2.215,11H31.026l-1.108,3h38.529l-2.216,10
+                    h-48.13L23.64,6z"/>
+            </g>
+              <polygon class="line" fill="#29ABE2" points="13.643,49.668 119.491,49.646 117.276,59.206 11.428,59.226 	"/>
+          </svg>
         </a>
       </div>
       <nav>
@@ -75,7 +85,11 @@
       <h3>Contact</h3>
       <hr>
       <h4>Want to get in touch?</h4>
-      <p>Send me an <a href="mailto:a@b.de">email</a></p>
+      <ul>
+        <li><a href="mailto:a@b.de"><i class="fa fa-envelope-square"></i> stefan.goeppert@gmail.com</a></li>
+        <li><a href="https://www.twitter.com"><i class="fa fa-twitter-square"></i> twitter.com/shadex91</a></li>
+        <li><a href="https://www.github.com" target="_blank"><i class="fa fa-github-square"></i> github.com/sgoeppert</a></li>
+      </ul>
     </section>
 
     <!-- FOOTER -->
@@ -157,7 +171,8 @@
 
         var grd = ctx.createLinearGradient(0,0,0,ch);
         grd.addColorStop(1,"rgba(255,255,255,1)");
-        grd.addColorStop(0.6,"rgba(255,255,255,.9)");
+        grd.addColorStop(0.9,"rgba(255,255,255,.9)");
+        grd.addColorStop(0.2,"rgba(255,255,255,0)");
         grd.addColorStop(0,"rgba(255,255,255,0)");
 
         ctx.fillStyle = grd;

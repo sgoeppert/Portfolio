@@ -25,7 +25,6 @@ section {
 }
 
 a {
-  color: #fff;
   text-decoration: none;
 }
 
@@ -83,7 +82,7 @@ header {
 }
 
 #logo {
-  width: 140px;
+  width: 110px;
   float: left;
   margin: 0 0 0 50px;
 }
@@ -92,8 +91,16 @@ header {
   opacity: 0.5;
 }
 
-#logo img {
+#logo img, #logo svg {
   width: 100%;
+}
+
+#logo-svg .letters {
+  fill: #494949;
+}
+
+#logo-svg .line {
+  fill: #449dd8;
 }
 
 header nav {
@@ -198,4 +205,40 @@ header nav ul li:hover {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+
+
+/************* CONTACT *************/
+#contact {
+  background-color: #ffffff;
+}
+#contact a {
+  text-transform: none;
+  font-size: 18px;
+}
+#contact i {
+  font-size: 2em;
+  vertical-align: middle;
+}
+#contact ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 400px;
+  text-align: left;
+}
+
+#contact ul li {
+  margin: 10px 0 0 0;
+}
+
+
+footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #494949;
+  border-top: 1px solid #f0f0f0;
+  text-align: left;
+  padding: 10px 0 10px 30px;
 }
