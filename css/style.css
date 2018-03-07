@@ -3,6 +3,8 @@ html, body {
   padding: 0;
   height: 100%;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 #background-canvas {
@@ -21,7 +23,9 @@ html, body {
 
 section {
   min-height: 100vh;
+  box-sizing: border-box;
   padding-top: 8%;
+  padding-bottom: 6%;
 }
 
 a {
@@ -62,7 +66,7 @@ hr {
 }
 
 /********* TRANSITIONS ***********/
-#logo, li, .fa-chevron-down, img {
+#logo, li, .fa-chevron-down, img, .fa-bars {
   transition: all 300ms;
   -o-transition: all 300ms;
   -moz-transition: all 300ms;
@@ -108,14 +112,16 @@ header nav {
   margin: 10px 50px 0 0;
 }
 
-header nav ul li {
-  float: left;
-  margin-right: 25px;
+header nav ul {
+  padding: 0;
 }
 
-header nav ul li a {
+header nav ul li {
+  float: left;
+  margin-left: 25px;
   font-size: 16px;
 }
+
 
 header nav ul li:hover {
   padding-top: 5px;
@@ -179,6 +185,7 @@ header nav ul li:hover {
 /************* PROJECTS *************/
 #projects {
   background-color: #f0f0f0;
+  padding-bottom: 0;
 }
 
 #work {
@@ -230,7 +237,7 @@ header nav ul li:hover {
 #contact ul {
   padding: 0;
   margin: 0 auto;
-  width: 400px;
+  max-width: 400px;
   text-align: left;
 }
 
@@ -239,9 +246,10 @@ header nav ul li:hover {
 }
 
 #contact ul li:hover a {
-  color: #f0f0f0;
+  font-size: 20px;
 }
 
+/************* FOOTER *************/
 footer {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -251,4 +259,238 @@ footer {
   border-top: 1px solid #f0f0f0;
   text-align: left;
   padding: 10px 0 10px 30px;
+}
+
+.fa-bars {
+  display: none;
+}
+
+/************* MEDIA QUERIES *************/
+
+/* TABLET */
+@media screen and (max-width: 1024px) {
+  header {
+    height: auto;
+    min-height: 40px;
+  }
+
+  #logo {
+    width: 100px;
+    margin-left: 35px;
+  }
+
+  #logo svg {
+    height: 35px;
+  }
+
+  header nav {
+    margin-top: 0;
+    margin-right: 35px;
+  }
+
+  header nav ul li {
+    font-size: 12px;
+  }
+
+  #home h1 {
+    font-size: 3.8em;
+    margin-top: 20vh;
+  }
+
+  #home h2 {
+    font-size: 22px;
+  }
+
+  #work {
+    width: auto;
+  }
+
+  #work ul li {
+    width: 100%;
+    float: none;
+  }
+
+  #work ul li:last-child {
+    padding-bottom: 10%;
+  }
+
+  #work img {
+    width: 55%;
+    height: auto;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+
+  #logo {
+    width: 90px;
+  }
+
+  #logo svg {
+    height: 35px;
+  }
+
+  header nav {
+    margin: 0;
+    float: none;
+  }
+
+  .fa-bars {
+    font-size: 18px;
+    text-align: right;
+    display: block;
+    float: right;
+    padding-top: 10px;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+  }
+
+  .fa-bars:hover {
+    opacity: 0.5;
+  }
+
+  header nav ul {
+    height: 0;
+    overflow: hidden;
+  }
+
+  header nav ul.open {
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+
+  header nav ul li {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    margin: 0;
+    font-size: 14px;
+    border-top: 1px solid #dddddd;
+  }
+
+  header nav ul li:hover {
+    background-color: #eeeeee;
+  }
+
+  #home h2 {
+    width: 70%;
+  }
+
+  #work img {
+    width: 70%;
+  }
+
+  #contact {
+    padding-top: 15%;
+  }
+
+  #contact ul {
+    text-align: center;
+  }
+}
+
+
+.project:nth-of-type(2n) {
+  background-color: #fff;
+}
+
+.card {
+  width: 80%;
+  box-sizing: border-box;
+  padding: 20px 0;
+  margin: 0 auto 20px auto;
+  display: inline-block;
+}
+
+
+.card img {
+  width: 30%;
+  height: 100%;
+}
+
+.card .info {
+  width: 60%;
+  float: right;
+}
+
+.info ul {
+  margin-top: 10px;
+  width: 100%;
+  display: inline-block;
+}
+
+.info ul li {
+  float: left;
+  margin-right: 25px;
+}
+
+.img-left img {
+  float: left;
+  margin-right: 5%;
+}
+
+.img-right img {
+  float: right;
+  margin-left: 5%;
+}
+
+.technology i {
+  font-size: 40px;
+}
+
+.project ul {
+  margin-top: 10px;
+  width: 100%;
+  display: inline-block;
+}
+
+.project ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+ul.technology-2 {
+  padding: 0;
+  width: 100%;
+}
+
+.technology-2 i {
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+.technology-2 li {
+  color: #494949;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+.btn {
+  background-color: #449dd8;
+  color: #f0f0f0;
+  font-size: 14px;
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  width: 40%;
+  padding: 10px;
+  margin: 5px 10px 20px 10px;
+  border-radius: 5px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+  .img-left img, .img-right img {
+    float: none;
+    margin: inherit;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .card .info {
+    width: 100%;
+    float: none;
+  }
 }

@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+  <meta charset="utf-8">
   <title>Stefan Göppert</title>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:500" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/devicon.min.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <canvas id="background-canvas"></canvas>
   <div id="page">
@@ -18,31 +21,32 @@
         <a href="#">
           <!-- <img src="images/logo.svg" alt="Logo"> -->
           <svg version="1.1" id="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="140px" height="65px" viewBox="0 0 140 65" enable-background="new 0 0 140 65" xml:space="preserve">
+            width="140px" height="65px" viewBox="0 0 140 65" enable-background="new 0 0 140 65" xml:space="preserve">
             <g class="letters" fill="#494949">
-              <polygon points="126.222,20 120.622,44 72.492,44 74.718,35 113.114,35 114.283,30 97.419,30 99.635,20 			"/>
-              <polygon points="129.485,6 127.269,17 88.74,17 85.469,30 75.872,30 81.354,6 			"/>
+              <polygon points="126.222,20 120.622,44 72.492,44 74.718,35 113.114,35 114.283,30 97.419,30 99.635,20 			" />
+              <polygon points="129.485,6 127.269,17 88.74,17 85.469,30 75.872,30 81.354,6 			" />
               <path d="M16.993,35h48.13l-2.215,9h-48.13L16.993,35z M23.64,6h48.13l-2.215,11H31.026l-1.108,3h38.529l-2.216,10
-                    h-48.13L23.64,6z"/>
+                    h-48.13L23.64,6z" />
             </g>
-              <polygon class="line" fill="#29ABE2" points="13.643,49.668 119.491,49.646 117.276,59.206 11.428,59.226 	"/>
+            <polygon class="line" fill="#29ABE2" points="13.643,49.668 119.491,49.646 117.276,59.206 11.428,59.226 	" />
           </svg>
         </a>
       </div>
+      <i id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
       <nav>
         <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          <a href="#home">
+            <li>Home</li>
+          </a>
+          <a href="#about">
+            <li>About</li>
+          </a>
+          <a href="#projects">
+            <li>Projects</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
         </ul>
       </nav>
     </header>
@@ -51,7 +55,9 @@
     <section id="home">
       <h1>Stefan Göppert</h1>
       <h2>Web-Frontend &amp; Java Developer</h2>
-      <a href="#about"><i class="fa fa-chevron-down"></i></a>
+      <a href="#about">
+        <i class="fa fa-chevron-down"></i>
+      </a>
     </section>
 
     <!-- ABOUT -->
@@ -59,25 +65,69 @@
       <h3>About</h3>
       <hr>
       <img src="http://via.placeholder.com/300x300" alt="Avatar">
-      <h4>Stefan Göppert</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates enim inventore facere distinctio
-        omnis voluptate sit assumenda dicta quisquam. Sequi cupiditate officia fugiat suscipit, dicta velit ipsum unde soluta?</p>
+      <h4>Hi I'm Stefan</h4>
+      <p>I'm a computer science student interested in Java and Web Front-End Development</p>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects">
       <h3>Projects</h3>
       <hr>
-      <div id="work">
-        <ul>
-          <li><a href="#"><img src="http://via.placeholder.com/280x170" alt="Projekt_01"></a></li>
-          <li><a href="#"><img src="http://via.placeholder.com/280x170" alt="Projekt_02"></a></li>
-          <li><a href="#"><img src="http://via.placeholder.com/280x170" alt="Projekt_03"></a></li>
-          <li><a href="#"><img src="http://via.placeholder.com/280x170" alt="Projekt_04"></a></li>
-          <li><a href="#"><img src="http://via.placeholder.com/280x170" alt="Projekt_05"></a></li>
-          <li><a href="#"><img src="http://via.placeholder.com/280x170" alt="Projekt_06"></a></li>
-        </ul>
+      <div class="project">
+        <div class="card img-left">
+          <h4>Profina Mobil - HTML Prototype</h4>
+          <img src="http://via.placeholder.com/1280x720" alt="Projekt_01">
+          <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore repellendus illo aperiam fugit amet. Iure ipsum similique, suscipit officiis explicabo, blanditiis dolore voluptatibus fuga optio voluptatum quam autem illo libero?</p>
+            <a href="page" class="btn">Visit webite</a>
+            <a href="github" class="btn">View on github</a>
+            <ul class="technology">
+              <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+              <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+              <li><i class="devicon-jquery-plain-wordmark colored"></i></li>
+              <li><i class="devicon-bootstrap-plain colored"></i></li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <div class="project">
+        <div class="card img-right">
+          <h4>Final Fantasy 14 Calculator - Web App</h4>
+          <img src="http://via.placeholder.com/1280x720" alt="Projekt_01">
+          <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore repellendus illo aperiam fugit amet. Iure ipsum similique, suscipit officiis explicabo, blanditiis dolore voluptatibus fuga optio voluptatum quam autem illo libero?</p>
+            <a href="page" class="btn">Visit webite</a>
+            <a href="github" class="btn">View on github</a>
+          </div>
+          <ul class="technology-2">
+              <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+              <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+              <li><i class="devicon-jquery-plain colored"></i> jQuery</li>
+              <li><i class="devicon-javascript-plain colored"></i> Javascript</li>
+            </ul>
+        </div>
+      </div>
+      <div class="project">
+        <div class="card img-left">
+          <h4>Yelp Camp - Full-Stack Training Project</h4>
+          <img src="http://via.placeholder.com/1280x720" alt="Projekt_01">
+          <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore repellendus illo aperiam fugit amet. Iure ipsum similique, suscipit officiis explicabo, blanditiis dolore voluptatibus fuga optio voluptatum quam autem illo libero?</p>
+            <a href="page" class="btn">Visit webite</a>
+            <a href="github" class="btn">View on github</a>
+          </div>
+          <ul class="technology-2">
+              <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+              <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+              <li><i class="devicon-jquery-plain colored"></i> jQuery</li>
+              <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
+              <li><i class="devicon-express-original colored"></i> Express</li>
+              <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
+              <li><i class="devicon-heroku-original colored"></i> Heroku</li>
+            </ul>
+        </div>
+      </div>
+      
     </section>
 
     <!-- CONTACT -->
@@ -86,9 +136,18 @@
       <hr>
       <h4>Want to get in touch?</h4>
       <ul>
-        <li><a href="mailto:stefan.goeppert@gmail.com"><i class="fa fa-envelope-square"></i> stefan.goeppert@gmail.com</a></li>
-        <li><a href="https://www.twitter.com/shadex91"><i class="fa fa-twitter-square"></i> twitter.com/shadex91</a></li>
-        <li><a href="https://www.github.com/sgoeppert" target="_blank"><i class="fa fa-github-square"></i> github.com/sgoeppert</a></li>
+        <li>
+          <a href="mailto:stefan.goeppert@gmail.com">
+            <i class="fa fa-envelope-square"></i> stefan.goeppert@gmail.com</a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/shadex91">
+            <i class="fab fa-twitter-square"></i> twitter.com/shadex91</a>
+        </li>
+        <li>
+          <a href="https://www.github.com/sgoeppert" target="_blank">
+            <i class="fab fa-github-square"></i> github.com/sgoeppert</a>
+        </li>
       </ul>
     </section>
 
@@ -124,7 +183,7 @@
       var hue = 220;
       var sat = 55;
       var light = 25;
-        
+
       var scrollY = 0;
       var distToSec2 = 0;
 
@@ -137,7 +196,7 @@
         var cw = canvas.width,
           ch = canvas.height;
         var size = 20;
-        var cols = cw/size;
+        var cols = cw / size;
         var rows = ch / size;
 
         // draw the flat background color
@@ -155,12 +214,12 @@
         for (var y = 0; y < rows; y++) {
           // each row is a closed path, maybe draw each line individually instead of entire rows
           ctx.beginPath();
-          ctx.strokeStyle = makeColor(hue+3*(y-rows/2), sat-20*y/rows, light+20+10*y/rows);
-          for(var x = 0; x < cols; x++) {
+          ctx.strokeStyle = makeColor(hue + 3 * (y - rows / 2), sat - 20 * y / rows, light + 20 + 10 * y / rows);
+          for (var x = 0; x < cols; x++) {
             drawLine(x * size, y * size, size, Math.random());
           }
-        ctx.closePath();
-        ctx.stroke();
+          ctx.closePath();
+          ctx.stroke();
         }
 
         // var grd = ctx.createLinearGradient(0,ch,cw,ch);
@@ -169,11 +228,11 @@
         // grd.addColorStop(0.7,"rgba(0,0,0,0.95)");
         // grd.addColorStop(1,"rgba(0,0,0,0.8)");
 
-        var grd = ctx.createLinearGradient(0,0,0,ch);
-        grd.addColorStop(1,"rgba(255,255,255,1)");
-        grd.addColorStop(0.9,"rgba(255,255,255,.9)");
-        grd.addColorStop(0.2,"rgba(255,255,255,0)");
-        grd.addColorStop(0,"rgba(255,255,255,0)");
+        var grd = ctx.createLinearGradient(0, 0, 0, ch);
+        grd.addColorStop(1, "rgba(255,255,255,1)");
+        grd.addColorStop(0.9, "rgba(255,255,255,.9)");
+        grd.addColorStop(0.2, "rgba(255,255,255,0)");
+        grd.addColorStop(0, "rgba(255,255,255,0)");
 
         ctx.fillStyle = grd;
         //ctx.fillRect(0, 0, cw, ch);
@@ -196,6 +255,9 @@
       drawBackground();
     })();
   </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>
