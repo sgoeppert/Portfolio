@@ -375,6 +375,7 @@ footer {
 
   header nav ul li:hover {
     background-color: #eeeeee;
+    padding-top: 8px;
   }
 
   #home h2 {
@@ -459,6 +460,13 @@ ul.technology-2 {
   width: 100%;
 }
 
+.project ul.technology-2 li {
+  white-space: nowrap;
+  float: none;
+  display: inline;
+  line-height: 2.5;
+}
+
 .technology-2 i {
   font-size: 40px;
   vertical-align: middle;
@@ -468,6 +476,7 @@ ul.technology-2 {
   color: #494949;
   font-weight: 500;
   padding: 5px 0;
+
 }
 
 .btn {
@@ -478,6 +487,7 @@ ul.technology-2 {
   display: block;
   box-sizing: border-box;
   width: 40%;
+  max-width: 150px;
   padding: 10px;
   margin: 5px 10px 20px 10px;
   border-radius: 5px;

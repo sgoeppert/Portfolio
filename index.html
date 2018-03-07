@@ -190,107 +190,10 @@
       Copyright &copy; 2018 Stefan Göppert
     </footer>
   </div>
-  <!-- Generate page background -->
-  <script type="text/javascript">
-    (function () {
-      window.addEventListener("resize", resizeThrottle, false);
-      // window.addEventListener("scroll", doScroll, false);
-
-      // function doScroll() {
-      //   scrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-      //   distToSec2 = document.getElementById("about").getBoundingClientRect().top;
-      //   drawBackground();
-      // }
-
-      var resizeTimeout;
-      function resizeThrottle() {
-        if (!resizeTimeout) {
-          resizeTimeout = setTimeout(function () {
-            resizeTimeout = null;
-            drawBackground();
-          }, 66);
-        }
-      }
-
-      var canvas = document.getElementById("background-canvas");
-      var ctx = canvas.getContext("2d");
-      var hue = 220;
-      var sat = 55;
-      var light = 25;
-
-      var scrollY = 0;
-      var distToSec2 = 0;
-
-      function drawBackground() {
-        // Resize the canvas to fill the entire background
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        // Calculate number and size of individual lines
-        var cw = canvas.width,
-          ch = canvas.height;
-        var size = 20;
-        var cols = cw / size;
-        var rows = ch / size;
-
-        // draw the flat background color
-        ctx.fillStyle = makeColor(hue, 100, 100);
-        ctx.fillRect(0, 0, cw, ch);
-
-        // draw the lines ala "10 PRINT CHR$(205.5+RND(1)); : GOTO 10"
-
-        // Line styles
-        ctx.lineWidth = 8;
-        ctx.lineCap = "round";
-        ctx.strokeStyle = makeColor(hue, sat, light + 40);
-
-        // draw the lines row by row
-        for (var y = 0; y < rows; y++) {
-          // each row is a closed path, maybe draw each line individually instead of entire rows
-          ctx.beginPath();
-          ctx.strokeStyle = makeColor(hue + 3 * (y - rows / 2), sat - 20 * y / rows, light + 20 + 10 * y / rows);
-          for (var x = 0; x < cols; x++) {
-            drawLine(x * size, y * size, size, Math.random());
-          }
-          ctx.closePath();
-          ctx.stroke();
-        }
-
-        // var grd = ctx.createLinearGradient(0,ch,cw,ch);
-        // grd.addColorStop(0,"rgba(0,0,0,0.8)");
-        // grd.addColorStop(0.3,"rgba(0,0,0,0.95)");
-        // grd.addColorStop(0.7,"rgba(0,0,0,0.95)");
-        // grd.addColorStop(1,"rgba(0,0,0,0.8)");
-
-        var grd = ctx.createLinearGradient(0, 0, 0, ch);
-        grd.addColorStop(1, "rgba(255,255,255,1)");
-        grd.addColorStop(0.9, "rgba(255,255,255,.9)");
-        grd.addColorStop(0.2, "rgba(255,255,255,0)");
-        grd.addColorStop(0, "rgba(255,255,255,0)");
-
-        ctx.fillStyle = grd;
-        //ctx.fillRect(0, 0, cw, ch);
-      }
-
-      function makeColor(h, s, l) {
-        return "hsl(" + h + "," + s + "%," + l + "%)"
-      }
-
-      function drawLine(x, y, size, dir) {
-        if (dir > 0.5) {
-          ctx.moveTo(x, y);
-          ctx.lineTo(x + size, y + size);
-        } else {
-          ctx.moveTo(x, y + size);
-          ctx.lineTo(x + size, y);
-        }
-      }
-
-      drawBackground();
-    })();
-  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+  <!-- Generate page background -->
+  <script src="js/canvas.js"></script>
   <script src="js/mobile-menu.js"></script>
 </body>
 
