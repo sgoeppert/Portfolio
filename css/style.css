@@ -182,6 +182,46 @@ header nav ul li:hover {
   margin: 0 auto;
 }
 
+.cv {
+  max-width: 800px;
+  min-width: 300px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.entry {
+  display: inline-block;
+  width: 100%;
+}
+
+.cv h5 {
+  font-size: 1.3rem;
+  color: #494949;
+  margin-bottom: 10px;
+}
+
+.cv h5 span {
+  color: #29ABE2;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.cv .two-cols {
+  width: 47.5%;
+  float: left;
+  margin-right: 2.5%;
+}
+
+
+
+#about .cv p {
+  max-width: none;
+  min-width: none;
+  width: 100%;
+}
+
 /************* PROJECTS *************/
 #projects {
   background-color: #f0f0f0;
@@ -410,7 +450,7 @@ footer {
 
 
 .card img {
-  width: 30%;
+  width: 35%;
   height: 100%;
 }
 
@@ -432,12 +472,12 @@ footer {
 
 .img-left img {
   float: left;
-  margin-right: 5%;
+  margin-right: 2%;
 }
 
 .img-right img {
   float: right;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 
 .technology i {
@@ -493,17 +533,46 @@ ul.technology-2 {
   border-radius: 5px;
 }
 
+.img-left .btn {
+  float: left;
+}
+
+.img-right .btn {
+  float: right;
+}
+
 /* MOBILE */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   .img-left img, .img-right img {
     float: none;
     margin: inherit;
     display: inline-block;
-    width: 100%;
+    width: 80%;
   }
 
   .card .info {
     width: 100%;
     float: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img-left img, .img-right img {
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .cv span {
+    float: right;
+  }
+
+  .cv .two-cols {
+    width: 100%;
+    float: none;
+    margin-right: 0;
   }
 }
