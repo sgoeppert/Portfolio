@@ -5,6 +5,8 @@ html, body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  
+  color: #494949;
 }
 
 #background-canvas {
@@ -480,10 +482,6 @@ footer {
   margin-left: 2%;
 }
 
-.technology i {
-  font-size: 40px;
-}
-
 .project ul {
   margin-top: 10px;
   width: 100%;
@@ -495,24 +493,24 @@ footer {
   margin-right: 20px;
 }
 
-ul.technology-2 {
+ul.technology {
   padding: 0;
   width: 100%;
 }
 
-.project ul.technology-2 li {
+.project ul.technology li {
   white-space: nowrap;
   float: none;
   display: inline;
   line-height: 2.5;
 }
 
-.technology-2 i {
+.technology i {
   font-size: 40px;
   vertical-align: middle;
 }
 
-.technology-2 li {
+.technology li {
   color: #494949;
   font-weight: 500;
   padding: 5px 0;
