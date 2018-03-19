@@ -182,6 +182,7 @@ header nav ul li:hover {
   min-width: 300px;
   width: 80%;
   margin: 0 auto;
+  text-align: left;
 }
 
 .cv {
@@ -475,6 +476,14 @@ footer {
 .img-left img {
   float: left;
   margin-right: 2%;
+}
+
+.img-right p {
+  text-align: right;
+}
+
+.img-left p {
+  text-align: left;
 }
 
 .img-right img {
