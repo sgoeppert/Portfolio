@@ -1,0 +1,33 @@
+@font-face{font-family:devicon;src:url(../webfonts/devicon.eot?-hdf3wh);src:url(../webfonts/devicon.eot?#iefix-hdf3wh) format('embedded-opentype'),url(../webfonts/devicon.woff?-hdf3wh) format('woff'),url(../webfonts/devicon.ttf?-hdf3wh) format('truetype'),url(../webfonts/devicon.svg?-hdf3wh#devicon) format('svg');font-weight:400;font-style:normal}[class*=" devicon-"],[class^=devicon-]{font-family:devicon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+.devicon-html5-plain-wordmark:before{content:"\e7f6"}.devicon-html5-plain:before{content:"\e7f7"}
+.devicon-html5-plain-wordmark.colored,.devicon-html5-plain.colored{color:#e54d26}
+.devicon-css3-plain-wordmark:before{content:"\e678"}.devicon-css3-plain:before{content:"\e679"}
+.devicon-css3-plain-wordmark.colored,.devicon-css3-plain.colored{color:#3d8fc6}
+
+.devicon-javascript-plain:before{content:"\e845"}.devicon-jquery-plain-wordmark:before{content:"\e849"}.devicon-jquery-plain:before{content:"\e84a"}
+.devicon-javascript-plain.colored{color:#f0db4f}
+.devicon-jquery-plain-wordmark.colored,.devicon-jquery-plain.colored{color:#0769ad}
+
+.devicon-express-original-wordmark:before{content:"\e93c"}.devicon-express-original:before{content:"\e93d"}
+.devicon-express-original-wordmark.colored,.devicon-express-original.colored{color:#444}
+
+.devicon-mongodb-plain-wordmark:before{content:"\eb43"}.devicon-mongodb-plain:before{content:"\eb44"}
+.devicon-mongodb-plain-wordmark.colored,.devicon-mongodb-plain.colored{color:#4FAA41}
+
+.devicon-bootstrap-plain-wordmark:before{content:"\e62e"}.devicon-bootstrap-plain:before{content:"\e62f"}
+.devicon-bootstrap-plain-wordmark.colored,.devicon-bootstrap-plain.colored{color:#59407f}
+
+.devicon-nodejs-plain-wordmark:before{content:"\eb69"}.devicon-nodejs-plain:before{content:"\eb6a"}
+.devicon-nodejs-plain-wordmark.colored,.devicon-nodejs-plain.colored{color:#83CD29}
+
+.devicon-heroku-line-wordmark:before,.devicon-heroku-original-wordmark:before{content:"\e60a"}.devicon-heroku-line:before,.devicon-heroku-original:before{content:"\e60b"}.devicon-heroku-plain-wordmark:before{content:"\e60c"}.devicon-heroku-plain:before{content:"\e60f"}
+.devicon-heroku-line-wordmark.colored,.devicon-heroku-line.colored,.devicon-heroku-original-wordmark.colored,.devicon-heroku-original.colored,.devicon-heroku-plain-wordmark.colored,.devicon-heroku-plain.colored{color:#6762a6}
+
+.fa,.fab,.fal,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}
+.fa-chevron-down:before{content:"\f078"}.fa-chevron-circle-down:before{content:"\f13a"}
+.fa-bars:before{content:"\f0c9"}
+.fa-envelope:before{content:"\f0e0"}.fa-envelope-open:before{content:"\f2b6"}.fa-envelope-square:before{content:"\f199"}
+.fa-github:before{content:"\f09b"}.fa-github-alt:before{content:"\f113"}.fa-github-square:before{content:"\f092"}
+.fa-twitter:before{content:"\f099"}.fa-twitter-square:before{content:"\f081"}
+@font-face{font-family:Font Awesome\ 5 Brands;font-style:normal;font-weight:400;src:url(../webfonts/fa-brands-400.eot);src:url(../webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-brands-400.woff2) format("woff2"),url(../webfonts/fa-brands-400.woff) format("woff"),url(../webfonts/fa-brands-400.ttf) format("truetype"),url(../webfonts/fa-brands-400.svg#fontawesome) format("svg")}.fab{font-family:Font Awesome\ 5 Brands}@font-face{font-family:Font Awesome\ 5 Free;font-style:normal;font-weight:400;src:url(../webfonts/fa-regular-400.eot);src:url(../webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-regular-400.woff2) format("woff2"),url(../webfonts/fa-regular-400.woff) format("woff"),url(../webfonts/fa-regular-400.ttf) format("truetype"),url(../webfonts/fa-regular-400.svg#fontawesome) format("svg")}.far{font-weight:400}@font-face{font-family:Font Awesome\ 5 Free;font-style:normal;font-weight:900;src:url(../webfonts/fa-solid-900.eot);src:url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-solid-900.woff2) format("woff2"),url(../webfonts/fa-solid-900.woff) format("woff"),url(../webfonts/fa-solid-900.ttf) format("truetype"),url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fa,.far,.fas{font-family:Font Awesome\ 5 Free}.fa,.fas{font-weight:900}

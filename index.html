@@ -7,9 +7,8 @@
   <!-- Required meta tags -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:500" rel="stylesheet">
-  <link rel="stylesheet" href="css/devicon.min.css">
-  <link rel="stylesheet" href="css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/icons.css" async>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
@@ -18,7 +17,7 @@
     <!-- HEADER       -->
     <header>
       <div id="logo">
-        <a href="#">
+        <a href="#" title="Home">
           <!-- <img src="images/logo.svg" alt="Logo"> -->
           <svg version="1.1" id="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="140px" height="65px" viewBox="0 0 140 65" enable-background="new 0 0 140 65" xml:space="preserve">
@@ -39,19 +38,16 @@
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#about">
-              About
-            </a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#projects">
-              Projects
-            </a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">
-              Contact
-            </a>
+            <a href="#cv">CV</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -70,78 +66,39 @@
     <section id="about">
       <h3>About</h3>
       <hr>
-      <h4>Hi I'm Stefan</h4>
-      <p>I'm a computer science student from Germany interested in Web and Game Development.</p>
-      <br>
-      <p>I'm currently studying Medieninformatik at the Westphalian University of Applied Sciences. 
-        In my spare time I love to learn new technologies and concepts such as - most recently - full-stack 
-        development with the MEAN stack, creative coding using <a href="https://p5js.org/" target="_blank">P5.js</a>
-         and game development with <a href="http://yoyogames.com/" target="_blank">GameMaker Studio 2</a>.</p>
-      <p>I'm starting to get used to developing with node.js but I'm most comfortable with plain old HTML, CSS and Javascript/jQuery.</p>
-
-      <div class="cv">
-        <div class="entry">
-          <h5>Undergraduate Study Medieninformatik
-            <span>2011-present</span>
-          </h5>
-          <p>Westphalian University of Applied Sciences</p>
-        </div>
-        <div class="entry two-cols">
-          <h5>Training as mathematical-technical assistant
-            <span>2010-2011</span>
-          </h5>
-          <p>Georg-Christoph-Lichtenberg Schule, Kassel</p>
-        </div>
-        <div class="entry two-cols">
-          <h5>Marginal employment as software developer
-            <span>2008-2011</span>
-          </h5>
-          <p>Micromata GmbH, Kassel</p>
-          <ul>
-            <li>Software development (Java)</li>
-            <li>Design and maintenance of websites (JSP, Struts, HTML, CSS, jQuery)</li>
-            <li>Responsive development for iPhone, Blackberry and Android</li>
-          </ul>
-        </div>
-        <div class="entry">
-          <h5>Abitur
-            <span>2010</span>
-          </h5>
-          <p>Georg-Christoph-Lichtenberg-Schule, Kassel</p>
+      <div class="card">
+        <h4>Hi I'm Stefan</h4>
+        <img src="http://via.placeholder.com/400x400" alt="">
+        <div class="info">
+          <p>I'm a computer science student from Germany interested in Web and Game Development.</p>
+          <p>I'm currently studying Medieninformatik at the Westphalian University of Applied Sciences. 
+            In my spare time I love to learn new technologies and concepts such as - most recently - full-stack 
+            development with the MEAN stack, creative coding using <a href="https://p5js.org/" target="_blank" rel="noopener">P5.js</a>
+              and game development with <a href="http://yoyogames.com/" target="_blank" rel="noopener">GameMaker Studio 2</a>.</p>
+          <p>I'm starting to get used to developing with node.js but I'm most comfortable with plain old HTML, CSS and Javascript/jQuery.</p>
         </div>
       </div>
-      <!-- 
-      <p>
-        <span>Westphalian University of Applied Sciences 2011-present</span>
-        Undergraduate study in computer science (Medieninformatik)
-      </p>
-      <p>
-        <span>Micromata 2009-2011</span>
-        Worked as a Java software developer creating mobile views for software applications.
-      </p>
-      <p>
-        <span>Georg-Christoph-Lichtenberg-Schule Kassel 2010-2011</span>
-        Ausbildung zum staatl. geprüften Mathematisch-Technischen Assistent
-      </p> -->
     </section>
 
     <!-- PROJECTS -->
     <section id="projects">
       <h3>Projects</h3>
       <hr>
+
+      <!-- PROFINA -->
       <div class="project">
         <div class="card img-left">
           <h4>Profina Mobil - HTML Prototype</h4>
-          <img src="images/profina_mockup.png" alt="Projekt_01">
+          <img src="images/profina_mockup.png" alt="Profina Mobil Screenshots">
           <div class="info">
             <p>This website is an HTML prototype developed as part of my undergraduate study in computer science (Medieninformatik).
               It was the final group-project of my webdesign class in 2015.</p>
             <p>Profina Mobil was a design concept for the insurance broker
-              <a href="http://profina-capital.de" target="_blank">Profina Capital</a> aimed at a younger demographic. The initial photoshop designs were developed with feedback
+              <a href="http://profina-capital.de" target="_blank" rel="noopener">Profina Capital</a> aimed at a younger demographic. The initial photoshop designs were developed with feedback
               from Profina and the final HTML prototypes were rated, with the best one to be turned into a full product.</p>
             <p>Design by my fellow student Markus Szalecki.</p>
-            <a href="https://sgoeppert.github.io/profina-prototype/" class="btn" target="_blank">Visit webite</a>
-            <a href="https://github.com/sgoeppert/profina-prototype" class="btn" target="_blank">View on github</a>
+            <a href="https://sgoeppert.github.io/profina-prototype/" class="btn" target="_blank" rel="noopener">Visit website</a>
+            <a href="https://github.com/sgoeppert/profina-prototype" class="btn" target="_blank" rel="noopener">View on github</a>
           </div>
           <ul class="technology">
             <li>
@@ -155,13 +112,15 @@
           </ul>
         </div>
       </div>
+
+      <!-- SSS -->
       <div class="project">
         <div class="card img-right">
           <h4>Final Fantasy 14 Calculator - Web App</h4>
-          <img src="images/sss_mockup.png" alt="Projekt_01">
+          <img src="images/sss_mockup.png" alt="SSS Calculator Screenshots">
           <div class="info">
             <p>The Stone Sky Sea Calculator is a way for players of the online game
-              <a href="https://eu.finalfantasyxiv.com/" target="_blank">Final Fantasy 14</a> to compare themselves with others.</p>
+              <a href="https://eu.finalfantasyxiv.com/" target="_blank" rel="noopener">Final Fantasy 14</a> to compare themselves with others.</p>
             <!-- <p>The calculator provides players with a way to see how well they are doing and to compare themselves to other players.</p> -->
             <!-- <p>This calculator takes the binary result of fighting the training target (success/defeat) into a number that can
               be used to compare with other players.</p> -->
@@ -170,8 +129,8 @@
               provides, the health and time, a player can turn their binary result into a number that can be compared to
               other players.
             </p>
-            <a href="http://ffxiv.2digitalgames.de/" class="btn" target="_blank">Visit webite</a>
-            <a href="https://github.com/sgoeppert/sss-calculator" class="btn" target="_blank">View on github</a>
+            <a href="http://ffxiv.2digitalgames.de/" class="btn" target="_blank" rel="noopener">Visit website</a>
+            <a href="https://github.com/sgoeppert/sss-calculator" class="btn" target="_blank" rel="noopener">View on github</a>
           </div>
           <ul class="technology">
             <li>
@@ -185,14 +144,23 @@
           </ul>
         </div>
       </div>
+
+      <!-- YELPCAMP -->
       <div class="project">
         <div class="card img-left">
           <h4>YelpCamp - Full-Stack Learning Project</h4>
-          <img src="http://via.placeholder.com/1280x720" alt="Projekt_01">
+          <img src="images/yelpcamp_mockup.png" alt="YelpCamp Screenshots">
           <div class="info">
             <p>YelpCamp is a simple clone of Yelp where people can post and comment on campgrounds. This full stack web app was developed as part of the Web Developers Bootcamp course on Udemy.</p>
-            <a href="external/yelpcamp.html" class="btn" target="_blank">Visit webite</a>
-            <a href="https://github.com/sgoeppert/yelpcamp-demo" class="btn" target="_blank">View on github</a>
+            <h5>Implemented Features</h5>
+            <ul>
+              <li>RESTful Routing in Express</li>
+              <li>Persistent data storage with MongoDB</li>
+              <li>User Authentication and Authorization</li>
+              <li>Responsive Design with Bootstrap</li>
+            </ul>
+            <a href="external/yelpcamp.html" class="btn" target="_blank" rel="noopener">Visit website</a>
+            <a href="https://github.com/sgoeppert/yelpcamp-demo" class="btn" target="_blank" rel="noopener">View on github</a>
           </div>
           <ul class="technology">
             <li>
@@ -201,8 +169,6 @@
               <i class="devicon-css3-plain colored"></i> CSS3</li>
             <li>
               <i class="devicon-bootstrap-plain colored"></i> Bootstrap 3</li>
-            <li>
-              <i class="devicon-jquery-plain colored"></i> jQuery</li>
             <li>
               <i class="devicon-nodejs-plain colored"></i> Node.js</li>
             <li>
@@ -214,7 +180,67 @@
           </ul>
         </div>
       </div>
+    </section>
 
+    <!-- CV -->
+    <section id="cv">
+      <h3>Curriculum Vitae</h3>
+      <hr>
+      <div class="cv">
+        <div class="entry">
+          <h5>Undergraduate Study Medieninformatik
+            <span>(2011-present)</span>
+          </h5>
+          <p>Westphalian University of Applied Sciences</p>
+          <ul>
+            <li>Created HTML prototype 'Profina Mobil'</li>
+            <li>Created audience response system as software project with Google Web Toolkit</li>
+          </ul>
+        </div>
+        <div class="entry two-cols">
+          <h5>Training as mathematical-technical assistant
+            <span>(2010-2011)</span>
+          </h5>
+          <p>Georg-Christoph-Lichtenberg Schule, Kassel</p>
+          Subjects:
+          <ul>
+            <li>Computer Science</li>
+            <li>Programming (Java, C++)</li>
+            <li>Digital Technology</li>
+            <li>Numerical Mathematics</li>
+            <li>Economics</li>
+          </ul>
+        </div>
+        <div class="entry two-cols">
+          <h5>Marginal employment as software developer
+            <span>(2008-2011)</span>
+          </h5>
+          <p>Micromata GmbH, Kassel</p>
+          <ul>
+            <li>Software development (Java)</li>
+            <li>Design and maintenance of websites (JSP, Struts, HTML, CSS, jQuery)</li>
+            <li>Responsive development for iPhone, Blackberry and Android</li>
+            <li>Developed tools to improve internationalization workflow</li>
+            <li>Writing documentation in German and English</li>
+          </ul>
+        </div>
+        <div class="entry two-cols">
+          <h5>Abitur
+            <span>(2010)</span>
+          </h5>
+          <p>Georg-Christoph-Lichtenberg-Schule, Kassel</p>
+        </div>
+        <div class="entry two-cols">
+          <h5>Internship as software developer and QA tester
+            <span>(2008)</span>
+          </h5>
+          <p>Micromata GmbH, Kassel</p>
+          <ul>
+            <li>Performed functional tests of a Java web application</li>
+            <li>Developed tools for automated tests</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
@@ -228,11 +254,11 @@
             <i class="fa fa-envelope-square"></i> stefan.goeppert@gmail.com</a>
         </li>
         <li>
-          <a href="https://www.twitter.com/shadex91">
+          <a href="https://www.twitter.com/shadex91" target="_blank" rel="noopener">
             <i class="fab fa-twitter-square"></i> twitter.com/shadex91</a>
         </li>
         <li>
-          <a href="https://www.github.com/sgoeppert" target="_blank">
+          <a href="https://www.github.com/sgoeppert" target="_blank" rel="noopener">
             <i class="fab fa-github-square"></i> github.com/sgoeppert</a>
         </li>
       </ul>
@@ -246,7 +272,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <!-- Generate page background -->
-  <script src="js/canvas.js"></script>
+  <script src="js/canvas.js" async></script>
   <script src="js/mobile-menu.js"></script>
 </body>
 
