@@ -113,11 +113,15 @@ a {
   text-align: center;
 }
 
-.img-left .btn {
+.buttons {
+  width: 350px;
+}
+
+.img-left .buttons {
   float: left;
 }
 
-.img-right .btn {
+.img-right .buttons {
   float: right;
 }
 
@@ -228,6 +232,7 @@ header nav ul li:hover {
 #about img {
   width: 30%;
   max-width: 250px;
+  border-radius: 50%;
 }
 
 /************* PROJECTS *************/
@@ -423,6 +428,11 @@ footer {
     display: inline-block;
     float: none;
   }
+
+  .buttons {
+    float: none !important;
+    display: inline-block;
+  }
   
   .info ul li {
     text-align: left;
@@ -530,6 +540,10 @@ footer {
     margin: 0 4% 0 0;
     width: 45%;
     font-size: 0.8rem;
+  }
+
+  .buttons {
+    width: 100%;
   }
   
   .technology li {
